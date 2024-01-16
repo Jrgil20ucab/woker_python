@@ -217,7 +217,7 @@ def mostrar_resultados():
 def exportar_resultados():
     # Lógica para exportar los resultados
     print("Opción 4 seleccionada: Exportar resultados")
-    Integrantes = {("Nombre1 Apellido1","CI1"),("Nombre2 Apellido2","CI2",("Nombre3 Apellido3","CI3")("Nombre4 Apellido4","CI4"))}
+    Integrantes = {("Nombre1 Apellido1","CI1"),("Nombre2 Apellido2","CI2"),("Nombre3 Apellido3","CI3"),("Nombre4 Apellido4","CI4")}
     eleccion = input("¿Desea salir del programa? (y/n): ")
     if eleccion.lower() == "y":
         salir()
