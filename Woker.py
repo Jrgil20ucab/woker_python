@@ -1,4 +1,5 @@
 import csv
+import os # importar libreria os para limpar la pantalla
 from datetime import datetime
 from collections import defaultdict
 
@@ -231,6 +232,7 @@ while True:
     archivos_precios="productos_ferreteria_precios.csv"
     archivos_ventas="productos_ferreteria_ventas.csv"
     archivos_salida="resultados_file"
+    os.system("cls")
     mostrar_menu()
     opcion = obtener_opcion()
     procesar_opcion(opcion)
