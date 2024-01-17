@@ -4,7 +4,7 @@ from collections import defaultdict
 
 # Leer el archivo de productos
 productos = {}
-with open('precios.csv', newline='', encoding='utf-8') as csvfile:
+with open('productos_ferreteria_precios.csv', newline='', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         nombre, codigo, descripcion, precio = row
@@ -17,7 +17,7 @@ with open('precios.csv', newline='', encoding='utf-8') as csvfile:
 # Leer el archivo de ventas
 ventas = {}
 fechas = []
-with open('ventas.csv', newline='', encoding='utf-8') as csvfile:
+with open('productos_ferreteria_ventas.csv', newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         fecha = row['fecha']
